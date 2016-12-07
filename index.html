@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Juego de carros con jQuery</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        
+    </head>
+    
+    <body id="race">
+        <h1>Carrera de carros con jQuery</h1>
+        
+        <input type="button" value="Empezar!" id="empezar">
+        <input type="button" value="Reset" id="reset">
+        
+        <div id="racetrack">
+            <img src="img/car1.png" alt="Green car" id="car1" class="car">
+            <img src="img/car2.png" alt="Red car" id="car2" class="car">
+        </div>
+        
+        <div id="raceInfoContainer" class="clearfix">
+            <h2>Resultados</h2>
+            <div id="raceInfo1" class="raceInfo">Carro 1<span></span></div>
+            <div id="raceInfo2" class="raceInfo">Carro 2<span></span></div>
+        </div>
+        
+        <!-- Load the CDN first -->
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        
+        <!-- If CDN fails to load, serve up the local version -->
+        <script>window.jQuery || document.write('<script src="js/jquery-2.1.4.js"><\/script>');</script>
+        
+        <script src="js/script.js"></script>
+    </body>
+    
+</html>
+
